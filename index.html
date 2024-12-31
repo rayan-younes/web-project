@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Pizza Guide</title>
+    <link rel="icon" type="image/x-icon" href="/Images/image.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/index.js">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <h1 class="logo">Pizza Rayan</h1>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Master the Art of Pizza Making</h1>
+            <p><b><i>Authentic Italian recipes and professional techniques to create restaurant-quality pizzas at
+                        home</i></b></p>
+            <a href="#featured">
+                <button class="styled-button">
+                    View Recipes
+                    <div class="inner-button">
+                        <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px"
+                            width="30px" class="icon">
+                            <defs>
+                                <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+                                    <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+                                    <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#iconGradient)"
+                                d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z">
+                            </path>
+                        </svg>
+                    </div>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <div id="featured">
+        <h1>Featured Pizza</h1>
+    </div>
+    <div class="fea-container">
+        <div class="fea-img">
+            <img src="Images/ClassicNeapolitan-index.jpg">
+        </div>
+        <div class="fea-txt">
+            <h1>Classic Neapolitan</h1>
+            <p style="font-weight: normal;font-size: 1.7rem;padding-top: 10px;">Neapolitan style pizza is known for its simplicity. You won't find anything more than fresh basil and mozzarella, olive oil, tomatoes, and a simple wheat dough in this historic pizza pie. Cooks and foodies are passionate about Neapolitan pizza
+                because it's all about the ingredients</p>
+        </div>
+    </div>
+    <div class="fea-container">
+        <div class="fea-txt">
+            <h1>New York Style</h1>
+            <p style="font-weight: normal;font-size: 1.7rem;padding-top: 10px;">New-York style pies are often easily distinguishable because of their extra-large and thin crust. The crust isn't as chewy as that in the traditional pie. Because the base isn't as complex as that of traditional pizzas, it is the perfect backdrop
+                for loading up on layers of toppings and cheese.</p>
+        </div>
+        <div class="fea-img">
+            <img src="Images/New-York-Style-index.jpg">
+        </div>
+    </div>
+    <div class="fea-container">
+        <div class="fea-img">
+            <img src="Images/Sicilian-Style-index.jpg">
+        </div>
+        <div class="fea-txt">
+            <h1>Sicilian Style</h1>
+            <p style="font-weight: normal;font-size: 1.7rem;padding-top: 10px;">In the United States, "Sicilian pizza" is used to describe a typically square variety of cheese pizza with dough over an inch thick, a crunchy base, and an airy interior. It is derived from the sfincione and was introduced in the United States
+                by the first Italian (Sicilian) immigrants.</p>
+        </div>
+    </div>
+
+    <section class="newsletter">
+        <h2>Get Weekly Pizza Recipes</h2>
+        <p>Subscribe to receive exclusive recipes and professional tips.</p>
+        <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const nameEmail = document.querySelector('input[type="email"]');
+
+            const message = "Hello " + nameEmail.value + "\nThank you for subscribing to our channel🌹.\nYou'll get notifications about any update.";
+
+            alert(message);
+
+            event.target.reset();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', handleSubmit);
+        });
+    </script>
+
+    <footer>
+        <b>&#169; Copyright RAYAN YOUNES - All Rights Reserved 2025 </b>
+    </footer>
+
+</body>
+
+
+
+</html>

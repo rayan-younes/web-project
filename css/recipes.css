@@ -1,0 +1,37 @@
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+.ytvid {
+    padding-top: 30px;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    font-size: 2.8rem;
+}
+
+#slimPic {
+    margin-top: 20px;
+    height: 20em;
+    width: 100%;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/recipes-img.jpg);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #659287;
+}

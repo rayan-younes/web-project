@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+.abt {
+    background-image: #DEAA79;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 180px 0 80px 0;
+    color: white;
+}
+
+.inside-abt {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.abt-ttl {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #659287, #b0ffeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.ttl {
+    font-size: 1.8rem;
+    color: #659287;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.intro-section {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.offers-section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.offers-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.offers-section li:before {
+    content: "•";
+    color: #659287;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+.values-section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.values-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.values-section li:before {
+    content: "✓";
+    color: #659287;
+    position: absolute;
+    left: 0;
+}
+
+.closing-section {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #659287;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-top: 2px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .abt {
+        padding: 120px 20px 40px;
+    }
+    .inside-abt {
+        padding: 2rem;
+    }
+    .abt-ttl {
+        font-size: 2.5rem;
+    }
+    .ttl {
+        font-size: 1.5rem;
+    }
+    .intro-section {
+        font-size: 1.2rem;
+    }
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}

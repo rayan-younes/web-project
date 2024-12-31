@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Pizza Guide</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="/Images/image.ico">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="js/index.js">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1 class="logo">Pizza Rayan</h1>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="imgLan"></div>
+    <div class="container">
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon">📍</div>
+                <div>
+                    <div>Address:</div>
+                    <div>Lebanon, Beirut</div>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">📞</div>
+                <div>
+                    <div>Phone:</div>
+                    <div>+(961) 76 049 761</div>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">✉️</div>
+                <div>
+                    <div>Email:</div>
+                    <div>younesrayane17@gmail.com</div>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">🌐</div>
+                <div>
+                    <div>Website:</div>
+                    <div>www.ul.edu.lb</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="form-section">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="image-section">
+                <img src="Images/chef-contact-form.jpg" alt="Contact Image">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <b>&#169; Copyright RAYAN YOUNES - All Rights Reserved 2025 </b>
+    </footer>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const nameInput = document.querySelector('input[type="text"]');
+
+            const message = "Hello " + nameInput.value + "\nThank you for your message, we'll contact you soon.";
+
+            alert(message);
+
+            event.target.reset();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', handleSubmit);
+        });
+    </script>
+</body>
+
+</html>
