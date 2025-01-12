@@ -72,6 +72,11 @@
                         <label>Phone Number</label>
                         <input type="number" required>
                     </div>
+                    <!-- Add the Date Input Field Here -->
+                    <div class="form-group">
+                        <label>Select a Date</label>
+                        <input type="date" required>
+                    </div>
                     <div class="form-group">
                         <label>Message</label>
                         <textarea required></textarea>
@@ -92,8 +97,9 @@
             event.preventDefault();
 
             const nameInput = document.querySelector('input[type="text"]');
+            const dateInput = document.querySelector('input[type="date"]');
 
-            const message = "Hello " + nameInput.value + "\nThank you for your message, we'll contact you soon.";
+            const message = "Hello " + nameInput.value + ",\nThank you for your message. We'll contact you soon.";
 
             alert(message);
 
